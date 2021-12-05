@@ -1,0 +1,11 @@
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\bin\Debug\net5.0\HealthyRecipes.Core.deps.json
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\bin\Debug\net5.0\HealthyRecipes.Core.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\bin\Debug\net5.0\ref\HealthyRecipes.Core.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\bin\Debug\net5.0\HealthyRecipes.Core.pdb
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.AssemblyInfoInputs.cache
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.AssemblyInfo.cs
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.csproj.CoreCompileInputs.cache
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\ref\HealthyRecipes.Core.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.Core\obj\Debug\net5.0\HealthyRecipes.Core.pdb

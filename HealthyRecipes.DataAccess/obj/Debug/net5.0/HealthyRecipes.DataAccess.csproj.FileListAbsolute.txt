@@ -1,0 +1,11 @@
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\bin\Debug\net5.0\HealthyRecipes.DataAccess.deps.json
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\bin\Debug\net5.0\HealthyRecipes.DataAccess.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\bin\Debug\net5.0\ref\HealthyRecipes.DataAccess.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\bin\Debug\net5.0\HealthyRecipes.DataAccess.pdb
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.AssemblyInfo.cs
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\ref\HealthyRecipes.DataAccess.dll
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.DataAccess\obj\Debug\net5.0\HealthyRecipes.DataAccess.pdb
