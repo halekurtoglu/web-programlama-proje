@@ -37,3 +37,4 @@ C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.WebUI\
 C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.WebUI\obj\Debug\net5.0\HealthyRecipes.WebUI.pdb
 C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.WebUI\obj\Debug\net5.0\HealthyRecipes.WebUI.genruntimeconfig.cache
 C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.WebUI\obj\Debug\net5.0\HealthyRecipes.WebUI.csproj.CopyComplete
+C:\Users\Halenur\Desktop\webproject\project\HealthyRecipes\HealthyRecipes.WebUI\obj\Debug\net5.0\HealthyRecipes.WebUI.csproj.AssemblyReference.cache
