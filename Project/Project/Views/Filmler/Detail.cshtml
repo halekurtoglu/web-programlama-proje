@@ -1,0 +1,73 @@
+﻿@model FilmDetailViewModel
+
+<div class="container-fluid">
+    <div class="col-12 d-flex align-items-center">
+        <div class="col-5">
+            <img src="~/img/film/@Model.Film.Resim" alt="..." class="img-fluid">
+        </div>
+        <div class="col-7">
+            <p style="color:white;">@localizer["Film"]: @Model.Film.FilmAdi</p>
+            <p style="color:white;">
+                @localizer["Türü"]: @foreach (var item in Model.Film.FilmKategorileri)
+                {
+                    @item.Kategori.KategoriAdi
+                    <span>,</span>
+                }
+            </p>
+            <p style="color:white;">@localizer["Çıkış Tarihi"]: @Model.Film.PiyasayaSurulmeTarihi.ToShortDateString()</p>
+            <p style="color:white;">@localizer["Geliştirici"]: @Model.Film.Gelistirici</p>
+            <p style="color:white;">@localizer["Yayıncı"]: @Model.Film.Yayinci</p>
+            <p style="color:white;">@localizer["Açıklama"]: @Model.Film.Aciklama</p>
+            @if (User.Identity.IsAuthenticated)
+            {
+                @if (Model.favorilerdemi)
+                {
+                    <a href="/Favori/FavoridenCikar/@Model.Film.FilmID" class="btn btn-danger btn-circle text-uppercase"><span class="glyphicon glyphicon-send">@localizer["Favorilerden Kaldır"]</span></a>
+                }
+                else
+                {
+                    <a href="/Favori/FavoriyeEkle/@Model.Film.FilmID" class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-send">@localizer["Favorilere Ekle"]</span></a>
+                }
+            }
+        </div>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form action="/Filmler/CreateComment" method="post" class="form-horizontal">
+            <input type="hidden" name="FilmID" value="@Model.Film.FilmID" />
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">@localizer["Yorum"]</label>
+                <div class="col-12">
+                    <textarea class="form-control" name="YapilanYorum" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-12">
+                    <button class="btn btn-success btn-circle text-uppercase" type="submit"><span class="glyphicon glyphicon-send"></span>@localizer["Yorumu Ekle"]</button>
+                </div>
+            </div>
+        </form>
+    }
+    <div class="col-12 d-flex align-items-center">
+        <div class="col-12" style="margin-top:2%">
+            <div class="row">
+                <h2><font style="color:white;">@localizer["Yorumlar"]</font></h2>
+            </div>
+            @foreach (var item in Model.Yorumlar)
+            {
+                <div class="row" style="margin-top:1%">
+                    <div style="padding:5px;">
+                        <p style="color:white;">@item.KullaniciAdi</p>
+                    </div>
+                </div>
+
+                <div class="row border-bottom border-dark">
+                    <div>
+                        <p style="color:white;">@item.YapilanYorum</p>
+                        <span asp-validation-for="Yorumlar"></span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

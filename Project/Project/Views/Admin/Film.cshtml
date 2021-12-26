@@ -1,0 +1,112 @@
+﻿@{ Layout = "adminDetailLayout"; }
+@model FilmListViewModel
+
+<div class="container">
+    <div class="row">
+        <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th class="th-sm">
+                        Film ID
+                    </th>
+                    <th class="th-sm">
+                        Film Adı
+                    </th>
+                    <th class="th-sm">
+                        Resim
+                    </th>
+                    <th class="th-sm">
+                        Açıklama
+                    </th>
+                    <th class="th-sm">
+                        Piyasaaya Sürülme Tarihi
+                    </th>
+                    <th class="th-sm">
+                        Geliştirici
+                    </th>
+                    <th class="th-sm">
+                        Yayıncı
+                    </th>
+                    <th class="th-sm">
+                        Görüntülenme Sayısı
+                    </th>
+                    <th class="th-sm">
+                        Durum
+                    </th>
+                    <th class="th-sm">
+                        Güncelle
+                    </th>
+                    <th class="th-sm">
+                        Göster
+                    </th>
+                    <th class="th-sm">
+                        Gizle
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model.Filmler)
+                {
+                    <tr>
+                        <form asp-controller="Admin" asp-action="FilmiGuncelle" method="post">
+                            <td><input type="hidden" name="FilmID" value="@item.FilmID"></td>
+                            <td><input type="text" id="row-1-age" name="FilmAdi" value="@item.FilmAdi"></td>
+                            <td><input type="text" id="row-1-age" name="Resim" value="@item.Resim"></td>
+                            <td><input type="text" id="row-1-age" name="Aciklama" value="@item.Aciklama"></td>
+                            <td><input type="text" id="row-1-age" name="PiyasayaSurulmeTarihi" value="@item.PiyasayaSurulmeTarihi"></td>
+                            <td><input type="text" id="row-1-age" name="Gelistirici" value="@item.Gelistirici"></td>
+                            <td><input type="text" id="row-1-age" name="Yayinci" value="@item.Yayinci"></td>
+                            <td>@item.GoruntulenmeSayisi</td>
+                            <td>@item.filmGosterilsinmi</td>
+                            <td><button type="submit" class="btn btn-primary btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Güncelle</span></button></td>
+                            <td><a href="/Admin/FilmiGoster/@item.FilmID" class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Goster</span></a></td>
+                            <td><a href="/Admin/FilmiGizle/@item.FilmID" class="btn btn-danger btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Gizle</span></a></td>
+                        </form>
+                    </tr>
+                }
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>
+                        Film ID
+                    </th>
+                    <th>
+                        Film Adı
+                    </th>
+                    <th>
+                        Resim
+                    </th>
+                    <th>
+                        Açıklama
+                    </th>
+                    <th>
+                        Piyasaya Sürülme Tarihi
+                    </th>
+                    <th>
+                        Geliştirici
+                    </th>
+                    <th>
+                        Yayıncı
+                    </th>
+                    <th>
+                        Görüntülenme Sayısı
+                    </th>
+                    <th>
+                        Durum
+                    </th>
+                    <th>
+                        Güncelle
+                    </th>
+                    <th>
+                        Göster
+                    </th>
+                    <th>
+                        Gizle
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+﻿@{ Layout = "adminDetailLayout"; }
+<div class="container">
+    <div class="row">
+        <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th class="th-sm">
+                        Film Adı
+                    </th>
+                    <th class="th-sm">
+                        Resim
+                    </th>
+                    <th class="th-sm">
+                        Açıklama
+                    </th>
+                    <th class="th-sm">
+                        Piyasaya Sürülme Tarihi
+                    </th>
+                    <th class="th-sm">
+                        Geliştirici
+                    </th>
+                    <th class="th-sm">
+                        Yayıncı
+                    </th>
+                    <th class="th-sm">
+                        Ekle
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <form asp-controller="Admin" asp-action="FilmEkle" method="post">
+                        <td><input type="text" id="row-1-age" name="FilmAdi"></td>
+                        <td><input type="file" id="myFile" name="Resim" accept="image/*,.pdf"></td>
+                        <td><input type="text" id="row-1-age" name="Aciklama"></td>
+                        <td><input type="text" id="row-1-age" name="PiyasayaSurulmeTarihi"></td>
+                        <td><input type="text" id="row-1-age" name="Gelistirici"></td>
+                        <td><input type="text" id="row-1-age" name="Yayinci"></td>
+                        <td><button type="submit" class="btn btn-primary btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Ekle</span></button></td>
+                    </form>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
