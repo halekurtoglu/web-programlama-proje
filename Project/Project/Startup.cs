@@ -32,7 +32,7 @@ namespace Project
             services.AddLocalization(option => { option.ResourcesPath = "Resources"; });
             services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
 
-            //localization from dkgamers
+            //localization 
             services.Configure<RequestLocalizationOptions>(option =>
             {
                 var supportedCultures = new List<CultureInfo>
@@ -52,7 +52,7 @@ namespace Project
             //services.AddDatabaseDeveloperPageExceptionFilter();
 
 
-            //from organic project
+            //from last lectures
             services.AddIdentity<Kullanici, IdentityRole>().AddDefaultTokenProviders().AddDefaultUI().AddEntityFrameworkStores<Context>();
 
            
@@ -61,7 +61,8 @@ namespace Project
 
             services.AddRazorPages();
 
-            //services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("FilmProject")));
+
+            ///services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("FilmProject")));
             //services.AddIdentity<Kullanici, IdentityRole>().AddEntityFrameworkStores<Context>().AddDefaultTokenProviders().AddDefaultUI();
             
             services.Configure<IdentityOptions>(options =>
