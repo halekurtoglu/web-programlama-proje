@@ -20,13 +20,13 @@ namespace Project.API
             {
                 _context = context;
             }
-            //api/film
+            //api/kategoriler
             [HttpGet]
             public async Task<ActionResult<IEnumerable<Kategori>>> GetKategori()
             {
                 return await _context.Kategori.ToListAsync();
             }
-            //api/Film/1
+            //api/kategoriler/1
             [HttpGet("{id}")]
             public async Task<ActionResult<Kategori>> GetKategori(int id)
             {
@@ -39,7 +39,7 @@ namespace Project.API
 
                 return Kategori;
             }
-            //api/Film/1
+            //api/kategorilers/1
             [HttpPut("{id}")]
             public async Task<IActionResult> PutKategori(int id, Kategori Kategori)
             {
@@ -68,7 +68,7 @@ namespace Project.API
 
                 return NoContent();
             }
-            //api/Film
+            //api/kategoriler
             [HttpPost]
             public async Task<ActionResult<Kategori>> PostKategori(Kategori Kategori)
             {
@@ -77,7 +77,7 @@ namespace Project.API
 
                 return CreatedAtAction("GetKategori", new { id = Kategori.KategoriID }, Kategori);
             }
-            //api/Film/1
+            //api/kategoriler/1
             [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteKategori(int id)
             {

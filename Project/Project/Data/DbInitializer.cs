@@ -19,6 +19,34 @@ namespace Project.Data
                     HaberResim = "orumcekAdam.jpg",
                     HaberIcerik = "Örümcek-Adam: Eve Dönüş Yok Columbia Pictures ve Marvel Studios tarafından ortaklaşa üretilen ve Sony Pictures tarafından dağıtılan, Marvel Comics karakteri Örümcek Adam çizgi romanlarından uyarlanan ABD süper kahraman filmidir.",
 
+                }, new Haber()
+                {
+                    HaberID = 2,
+                    HaberBaslik = "Matrix Resurrections filmi vizyona girdi!",
+                    HaberResim = "matrix.jpg",
+                    HaberIcerik = "Matrix Resurrections”la çifte gerçeklik dünyasına geri dönülüyor. Bay Anderson yeniden beyaz tavşanı izlemeyi seçmek zorunda kalır. Çünkü Anderson gerçekliğinin fiziksel mi yoksa zihinsel bir kurgu mu olduğunu anlayıp, kendisini gerçekten tanımak istemektedir. Thomas’ın...Neo’nun bildiği tek bir şey vardır; o da bir ilüzyon dahi olsa Matrix'e girmenin ve çıkmanın tek yolunun seçimden ibaret oluşudur. Neo ne yapması gerektiğini çok iyi bilse de Matrix'in artık daha güvenli, güçlü ve tehlikeli olduğundan bihaberdir.",
+
+                }, new Haber()
+                {
+                    HaberID = 3,
+                    HaberBaslik = "Harry Potter 20th Anniversary: Return to Hogwarts filmi çok yakında sevenleriyle buluşacak!",
+                    HaberResim = "harrypotter.jpg",
+                    HaberIcerik = "HBO Max Harrry Potter hayranlarını sevindirecek bir duyuru yaptı. Harry Potter serisinin ilk filmi olan Felsefe Taşı 20. yıl dönümünde serinin yıldızları Daniel Radcliffe, Rupert Grint ve Emma Watson ve yönetmen Chris Columbus bir araya gelerek filmleri ve ürünleri konuşacak. Return to Hogwarts (Hogwarts'a Dönüş) fragmanı serinin hayranları tarafından milyonlarca kez izlendi. Oyuncuların film setinde bir araya geleceği Harry Potter Hogwarts'a Dönüş isimli özel program, yılbaşında HBO Max'te yayınlanacak. Hogwarts'a Dönüş programının mayıs ayında yayınlanan Friends’in ‘Reunion’ tarzında olması bekleniyor. HBO Max tarafından yayınlanacak Hogwarts'a 1 Ocak 2022'de streaming servisinde yayınlanacak. Haryy Potter ve Felsefe Taşı 1 Şubat 2002 tarihinde yayınlandı. HARRY POTTER 2022 HOGWARTS’A DÖNÜŞ KONUSU ?Harry Potter Hogwarts’a Dönüş programı için heyecanlanan dizinin hayranları dizinin konusu hakkında araştırma yapıyor.Harry Potter ‘Reunion’ için henüz detaylı bir bilgi verilmedi.Geçtiğimiz günlerde kısa bir fragman ve ardından da altın üçlünün yer aldığı ilk görsel paylaşılmıştı.Fragmanda bazı oyunculara Hogwarts mektubu gittiğini ve onların da Hogwarts Ekspresi'ne binmek için 9 3/4 numaralı perona gittiklerini görüldü.",
+
+                }, new Haber()
+                {
+                    HaberID = 4,
+                    HaberBaslik = "Enkanto: Sihirli Dünya animasyonu animasyon severlerin dört gözle beklediği an geldi!",
+                    HaberResim = "eskanto.jpg",
+                    HaberIcerik = "Film, Kolombiya dağlarının ardına gizlenmiş, Encanto adındaki harikulade ve tılsımlı bir yerde, büyülü bir evde yaşayan sıradışı Madrigal ailesinin hikayesini anlatıyor. Encanto’nun büyüsü sayesinde bu ailenin her bir çocuğu süper güçten tut iyileştirme gücüne kadar eşsiz birer armağana kavuşmuştur – Mirabel hariç. Ancak Encanto'yu çevreleyen büyünün tehlikede olduğunu keşfettiğinde ailenin tek sıradan çocuğu olan Mirabel, olağanüstü ailesinin son umudu olabileceğine karar verir.",
+
+                }, new Haber()
+                {
+                    HaberID = 5,
+                    HaberBaslik = "Alita: Savaş Meleği filmi vizyona girdi! Tüm sinemalarda biletler tükendi!",
+                    HaberResim = "alitasavasmelegi.jpg",
+                    HaberIcerik = "Alita: Savaş Meleği (İngilizce: Alita: Battle Angel), yönetmenliğini Robert Rodriguez'in yaptığı ve senaryosu James Cameron ve Laeta Kalogridis tarafından yazılan 2019 yapımı bir Amerikan cyberpunk aksiyon filmidir. Film, Yukito Kishiro'nin Gunnm adlı manga serisine dayanmakta olup yeni bir bedende uyandıktan sonra hiçbir şeyi hatırlamayan ve kendi geçmişini öğrenmeye karar veren bir siborg kız Alita'yı takip etmektedir. Başlangıçta 2003 yılında duyurulan filmin yapımıyla ilgili yapımcı Cameron'un Avatar ve devam filmi konusundaki çalışmaları nedeniyle art arda ertelendi. Uzun yıllar ertelenen filmin ardından Rodriguez, Nisan 2016'da filmin yönetmeni oldu ve ertesi ay Rosa Salazar filmin başrol oyuncusu seçildi.Filmin çekimleri Ekim 2016 - Şubat 2017 tarihleri arasında Austin'de, çoğunlukla Troublemaker Studios'ta gerçekleştirildi. Alita: Savaş Meleği,  dünya prömiyerini 31 Ocak 2019 tarihinde Odeon Leicester Square'da gerçekleştirdi ve ABD'de 14 Şubat 2019'da 20th Century Fox tarafından Real Real 3D, Dolby Cinema 3D ve IMAX 3D formatlarında yayınlandı. Lightstorm Entertainment'in 2009'daki Avatar'ından bu yana ilk filmi olmasının yanı sıra; 20th Century Fox'un, Walt Disney Company'nin Mart 2019'da hisselerinin çoğunluğunun kontrolünü ele almasından önceki, son filmidir. Film, dünya çapında 404 milyon doların üzerinde hasılat elde etti ve 2019'un en yüksek beşinci en çok hasılat elde eden filmi ve Rodriguez'in bugüne kadar piyasadaki en başarılı filmi oldu. Salazar'ın performansı, aksiyon sahneleri ve görsel efektler için eleştirmenlerden övgüyle karışık eleştiriler aldı, ancak karışık senaryo ve sekanslar dolayı eleştiriler almıştır.",
+
                 }
                 );
             builder.Entity<Film>().HasData(
