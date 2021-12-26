@@ -1,0 +1,38 @@
+﻿@{ Layout = "adminDetailLayout"; }
+@model Project.Models.Haber
+<div class="container">
+    <div class="row">
+        <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th class="th-sm">
+                        Başlık
+                    </th>
+                    <th class="th-sm">
+                        Resim
+                    </th>
+                    <th class="th-sm">
+                        İçerik
+                    </th>
+                    <th class="th-sm">
+                        Ekle
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <form asp-controller="Admin" asp-action="HaberEkle" method="post">
+                        <td><input type="text" id="row-1-age" name="HaberBaslik"></td>
+                        <td><input type="file" id="myFile" name="HaberResim" accept="image/*,.pdf"></td>       
+                        <td><input type="text" id="row-1-age" name="HaberIcerik"></td>
+                        <td><button type="submit" class="btn btn-primary btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Ekle</span></button></td>
+                    </form>
+                </tr>
+
+
+            </tbody>
+            
+        </table>
+    </div>
+</div>

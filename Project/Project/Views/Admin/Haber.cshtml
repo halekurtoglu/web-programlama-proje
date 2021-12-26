@@ -1,0 +1,84 @@
+﻿@{ Layout = "adminDetailLayout"; }
+@model HaberListViewModel
+
+    <div class="container">
+        <div class="row">
+            <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm">
+                            Haber ID
+                        </th>
+                        <th class="th-sm">
+                            Başlık
+                        </th>
+                        <th class="th-sm">
+                            Resim
+                        </th>
+                        <th class="th-sm">
+                            İçerik
+                        </th>
+                        <th class="th-sm">
+                            Durum
+                        </th>
+                        <th class="th-sm">
+                            Güncelle
+                        </th>
+                        <th class="th-sm">
+                            Göster
+                        </th>
+                        <th class="th-sm">
+                            Gizle
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model.Haberler)
+                    {
+                        <tr>
+                            <form asp-controller="Admin" asp-action="HaberGuncelle" method="post">
+                                <td><input type="hidden" name="HaberID" value="@item.HaberID"></td>
+                                <td><input type="text" id="row-1-age" name="HaberBaslik" value="@item.HaberBaslik"></td>
+                                <td><input type="text" id="row-1-age" name="HaberResim" value="@item.HaberResim"></td>
+                                <td><input type="text" id="row-1-age" name="HaberIcerik" value="@item.HaberIcerik"></td>
+                                <td>@item.haberGosterilsinmi</td>
+                                <td><button type="submit" class="btn btn-primary btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Güncelle</span></button></td>
+                                <td><a href="/Admin/HaberiGoster/@item.HaberID" class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Goster</span></a></td>
+                                <td><a href="/Admin/HaberiGizle/@item.HaberID" class="btn btn-danger btn-circle text-uppercase"><span class="glyphicon glyphicon-send">Gizle</span></a></td>
+                            </form>
+                        </tr>
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>
+                            Haber ID
+                        </th>
+                        <th>
+                            Başlık
+                        </th>
+                        <th>
+                            Resim
+                        </th>
+                        <th>
+                            İçerik
+                        </th>
+                        <th class="th-sm">
+                            Durum
+                        </th>
+                        <th>
+                            Güncelle
+                        </th>
+                        <th>
+                            Göster
+                        </th>
+                        <th>
+                            Gizle
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
+</div>
