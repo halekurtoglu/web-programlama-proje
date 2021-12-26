@@ -10,8 +10,8 @@ using Project.Data;
 namespace Project.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20211225210538_filmmigration")]
-    partial class filmmigration
+    [Migration("20211226184103_filmproject")]
+    partial class filmproject
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,7 +51,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "7d367a23-b9ed-4363-b6ac-5f35529f6479",
+                            ConcurrencyStamp = "52101f05-427b-4059-aa7a-4a69235dc473",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -237,15 +237,15 @@ namespace Project.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d68fb1bf-052c-4ec0-a5e8-0775733be550",
+                            ConcurrencyStamp = "03a26ee5-d164-4a7c-88e9-38b7acaa5bf2",
                             Email = "g181210001@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "G181210001@SAKARYA.EDU.TR",
                             NormalizedUserName = "G181210001@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGu4mSgVVXCALoH9WH7gfUSXD3F/nvL628aOKsIkQnH5JkB8PJT/8zkNNfA9MsYGWQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGfNlxFGheefo3tVhJ/QW6t60d7U4uBBziFGhwcdKEAHMPTdbmuwGdnEqyJKPjS4Kg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "dce131d9-8b3a-4bfc-b2fa-44e1a8fcdaa8",
+                            SecurityStamp = "5d543821-0737-4f26-998d-2154eaf0e60c",
                             TwoFactorEnabled = false,
                             UserName = "g181210001@sakarya.edu.tr"
                         });
@@ -320,8 +320,56 @@ namespace Project.Migrations
                             Gelistirici = "Marvel Studios",
                             GoruntulenmeSayisi = 100,
                             PiyasayaSurulmeTarihi = new DateTime(2021, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Resim = "",
+                            Resim = "orumcekAdam.jpg",
                             Yayinci = "Marvel Studios",
+                            filmGosterilsinmi = false
+                        },
+                        new
+                        {
+                            FilmID = 12,
+                            Aciklama = "Matrix Resurrections”la çifte gerçeklik dünyasına geri dönülüyor. Bay Anderson yeniden beyaz tavşanı izlemeyi seçmek zorunda kalır. Çünkü Anderson gerçekliğinin fiziksel mi yoksa zihinsel bir kurgu mu olduğunu anlayıp, kendisini gerçekten tanımak istemektedir. Thomas’ın...Neo’nun bildiği tek bir şey vardır; o da bir ilüzyon dahi olsa Matrix'e girmenin ve çıkmanın tek yolunun seçimden ibaret oluşudur. Neo ne yapması gerektiğini çok iyi bilse de Matrix'in artık daha güvenli, güçlü ve tehlikeli olduğundan bihaberdir.",
+                            FilmAdi = "Matrix Resurrections",
+                            Gelistirici = "Lana Wachowski",
+                            GoruntulenmeSayisi = 100,
+                            PiyasayaSurulmeTarihi = new DateTime(2021, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Resim = "matrix.jpg",
+                            Yayinci = "Lana Wachowski",
+                            filmGosterilsinmi = false
+                        },
+                        new
+                        {
+                            FilmID = 13,
+                            Aciklama = "HBO Max Harrry Potter hayranlarını sevindirecek bir duyuru yaptı. Harry Potter serisinin ilk filmi olan Felsefe Taşı 20. yıl dönümünde serinin yıldızları Daniel Radcliffe, Rupert Grint ve Emma Watson ve yönetmen Chris Columbus bir araya gelerek filmleri ve ürünleri konuşacak. Return to Hogwarts (Hogwarts'a Dönüş) fragmanı serinin hayranları tarafından milyonlarca kez izlendi. Oyuncuların film setinde bir araya geleceği Harry Potter Hogwarts'a Dönüş isimli özel program, yılbaşında HBO Max'te yayınlanacak. Hogwarts'a Dönüş programının mayıs ayında yayınlanan Friends’in ‘Reunion’ tarzında olması bekleniyor. HBO Max tarafından yayınlanacak Hogwarts'a 1 Ocak 2022'de streaming servisinde yayınlanacak. Haryy Potter ve Felsefe Taşı 1 Şubat 2002 tarihinde yayınlandı. HARRY POTTER 2022 HOGWARTS’A DÖNÜŞ KONUSU ?Harry Potter Hogwarts’a Dönüş programı için heyecanlanan dizinin hayranları dizinin konusu hakkında araştırma yapıyor.Harry Potter ‘Reunion’ için henüz detaylı bir bilgi verilmedi.Geçtiğimiz günlerde kısa bir fragman ve ardından da altın üçlünün yer aldığı ilk görsel paylaşılmıştı.Fragmanda bazı oyunculara Hogwarts mektubu gittiğini ve onların da Hogwarts Ekspresi'ne binmek için 9 3/4 numaralı perona gittiklerini görüldü.",
+                            FilmAdi = "Harry Potter 20th Anniversary: Return to Hogwarts",
+                            Gelistirici = "Warner Bros",
+                            GoruntulenmeSayisi = 100,
+                            PiyasayaSurulmeTarihi = new DateTime(2021, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Resim = "haryypotter.jpg",
+                            Yayinci = " Warner Bros",
+                            filmGosterilsinmi = false
+                        },
+                        new
+                        {
+                            FilmID = 14,
+                            Aciklama = "Film, Kolombiya dağlarının ardına gizlenmiş, Encanto adındaki harikulade ve tılsımlı bir yerde, büyülü bir evde yaşayan sıradışı Madrigal ailesinin hikayesini anlatıyor. Encanto’nun büyüsü sayesinde bu ailenin her bir çocuğu süper güçten tut iyileştirme gücüne kadar eşsiz birer armağana kavuşmuştur – Mirabel hariç. Ancak Encanto'yu çevreleyen büyünün tehlikede olduğunu keşfettiğinde ailenin tek sıradan çocuğu olan Mirabel, olağanüstü ailesinin son umudu olabileceğine karar verir.",
+                            FilmAdi = "Enkanto: Sihirli Dünya",
+                            Gelistirici = "Walt Disney Animasyon Stüdyoları",
+                            GoruntulenmeSayisi = 100,
+                            PiyasayaSurulmeTarihi = new DateTime(2021, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Resim = "eskanto.jpg",
+                            Yayinci = "Walt Disney Animasyon Stüdyoları",
+                            filmGosterilsinmi = false
+                        },
+                        new
+                        {
+                            FilmID = 15,
+                            Aciklama = "Alita: Savaş Meleği (İngilizce: Alita: Battle Angel), yönetmenliğini Robert Rodriguez'in yaptığı ve senaryosu James Cameron ve Laeta Kalogridis tarafından yazılan 2019 yapımı bir Amerikan cyberpunk aksiyon filmidir. Film, Yukito Kishiro'nin Gunnm adlı manga serisine dayanmakta olup yeni bir bedende uyandıktan sonra hiçbir şeyi hatırlamayan ve kendi geçmişini öğrenmeye karar veren bir siborg kız Alita'yı takip etmektedir. Başlangıçta 2003 yılında duyurulan filmin yapımıyla ilgili yapımcı Cameron'un Avatar ve devam filmi konusundaki çalışmaları nedeniyle art arda ertelendi. Uzun yıllar ertelenen filmin ardından Rodriguez, Nisan 2016'da filmin yönetmeni oldu ve ertesi ay Rosa Salazar filmin başrol oyuncusu seçildi.Filmin çekimleri Ekim 2016 - Şubat 2017 tarihleri arasında Austin'de, çoğunlukla Troublemaker Studios'ta gerçekleştirildi. Alita: Savaş Meleği,  dünya prömiyerini 31 Ocak 2019 tarihinde Odeon Leicester Square'da gerçekleştirdi ve ABD'de 14 Şubat 2019'da 20th Century Fox tarafından Real Real 3D, Dolby Cinema 3D ve IMAX 3D formatlarında yayınlandı. Lightstorm Entertainment'in 2009'daki Avatar'ından bu yana ilk filmi olmasının yanı sıra; 20th Century Fox'un, Walt Disney Company'nin Mart 2019'da hisselerinin çoğunluğunun kontrolünü ele almasından önceki, son filmidir. Film, dünya çapında 404 milyon doların üzerinde hasılat elde etti ve 2019'un en yüksek beşinci en çok hasılat elde eden filmi ve Rodriguez'in bugüne kadar piyasadaki en başarılı filmi oldu. Salazar'ın performansı, aksiyon sahneleri ve görsel efektler için eleştirmenlerden övgüyle karışık eleştiriler aldı, ancak karışık senaryo ve sekanslar dolayı eleştiriler almıştır.",
+                            FilmAdi = "Alita: Savaş Meleği",
+                            Gelistirici = "James Cameron",
+                            GoruntulenmeSayisi = 100,
+                            PiyasayaSurulmeTarihi = new DateTime(2021, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Resim = "alitasavasmelegi.jpg",
+                            Yayinci = "James Cameron",
                             filmGosterilsinmi = false
                         });
                 });
@@ -345,6 +393,26 @@ namespace Project.Migrations
                         {
                             FilmID = 1,
                             KategoriID = 1
+                        },
+                        new
+                        {
+                            FilmID = 14,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            FilmID = 15,
+                            KategoriID = 3
+                        },
+                        new
+                        {
+                            FilmID = 12,
+                            KategoriID = 4
+                        },
+                        new
+                        {
+                            FilmID = 13,
+                            KategoriID = 3
                         });
                 });
 
@@ -380,7 +448,7 @@ namespace Project.Migrations
                             HaberID = 1,
                             HaberBaslik = "Örümcek Adam eve geri dönüş yok filmi vizyona girdi!",
                             HaberIcerik = "Örümcek-Adam: Eve Dönüş Yok Columbia Pictures ve Marvel Studios tarafından ortaklaşa üretilen ve Sony Pictures tarafından dağıtılan, Marvel Comics karakteri Örümcek Adam çizgi romanlarından uyarlanan ABD süper kahraman filmidir.",
-                            HaberResim = "orumcekadam.jpg",
+                            HaberResim = "orumcekAdam.jpg",
                             haberGosterilsinmi = false
                         });
                 });
@@ -404,6 +472,21 @@ namespace Project.Migrations
                         {
                             KategoriID = 1,
                             KategoriAdi = "Aksiyon"
+                        },
+                        new
+                        {
+                            KategoriID = 2,
+                            KategoriAdi = "Animasyon"
+                        },
+                        new
+                        {
+                            KategoriID = 3,
+                            KategoriAdi = "Bilim Kurgu"
+                        },
+                        new
+                        {
+                            KategoriID = 4,
+                            KategoriAdi = "Fantastik"
                         });
                 });
 

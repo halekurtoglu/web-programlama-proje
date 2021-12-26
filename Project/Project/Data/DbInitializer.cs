@@ -47,7 +47,7 @@ namespace Project.Data
                   new Film()
                   {
                       FilmID = 13,
-                      Resim = "haryypotter.jpg",
+                      Resim = "harrypotter.jpg",
                       FilmAdi = "Harry Potter 20th Anniversary: Return to Hogwarts",
                       PiyasayaSurulmeTarihi = new DateTime(2021, 12, 17),
                       Yayinci = " Warner Bros",
