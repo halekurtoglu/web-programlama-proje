@@ -6,18 +6,18 @@
             <img src="~/img/film/@Model.Film.Resim" alt="..." class="img-fluid">
         </div>
         <div class="col-7">
-            <p style="color:white;">@localizer["Film"]: @Model.Film.FilmAdi</p>
-            <p style="color:white;">
+            <p style="color: black;">@localizer["Film"]: @Model.Film.FilmAdi</p>
+            <p style="color: black;">
                 @localizer["Türü"]: @foreach (var item in Model.Film.FilmKategorileri)
                 {
                     @item.Kategori.KategoriAdi
                     <span>,</span>
                 }
             </p>
-            <p style="color:white;">@localizer["Çıkış Tarihi"]: @Model.Film.PiyasayaSurulmeTarihi.ToShortDateString()</p>
-            <p style="color:white;">@localizer["Geliştirici"]: @Model.Film.Gelistirici</p>
-            <p style="color:white;">@localizer["Yayıncı"]: @Model.Film.Yayinci</p>
-            <p style="color:white;">@localizer["Açıklama"]: @Model.Film.Aciklama</p>
+            <p style="color: black;">@localizer["Çıkış Tarihi"]: @Model.Film.PiyasayaSurulmeTarihi.ToShortDateString()</p>
+            <p style="color: black;">@localizer["Geliştirici"]: @Model.Film.Gelistirici</p>
+            <p style="color: black;">@localizer["Yayıncı"]: @Model.Film.Yayinci</p>
+            <p style="color: black;">@localizer["Açıklama"]: @Model.Film.Aciklama</p>
             @if (User.Identity.IsAuthenticated)
             {
                 @if (Model.favorilerdemi)
@@ -51,19 +51,19 @@
     <div class="col-12 d-flex align-items-center">
         <div class="col-12" style="margin-top:2%">
             <div class="row">
-                <h2><font style="color:white;">@localizer["Yorumlar"]</font></h2>
+                <h2><font style="color: black;">@localizer["Yorumlar"]</font></h2>
             </div>
             @foreach (var item in Model.Yorumlar)
             {
                 <div class="row" style="margin-top:1%">
                     <div style="padding:5px;">
-                        <p style="color:white;">@item.KullaniciAdi</p>
+                        <p style="color: black;">@item.KullaniciAdi</p>
                     </div>
                 </div>
 
                 <div class="row border-bottom border-dark">
                     <div>
-                        <p style="color:white;">@item.YapilanYorum</p>
+                        <p style="color:black;">@item.YapilanYorum</p>
                         <span asp-validation-for="Yorumlar"></span>
                     </div>
                 </div>
