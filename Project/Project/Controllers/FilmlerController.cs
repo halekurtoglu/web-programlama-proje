@@ -15,6 +15,7 @@ namespace Project.Controllers
     {
         private Context context;
         private UserManager<Kullanici> kullaniciYoneticisi;
+
         public FilmlerController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
