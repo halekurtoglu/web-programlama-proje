@@ -1,6 +1,6 @@
 # web-programlama-proje
 
-Sakarya Üniversitesi bilgisayar mühendisliği web programlama dersi için Asp.Net Core Mvc projesi.
+Sakarya Üniversitesi bilgisayar mühendisliği web programlama dersi için Asp.Net Core 5.0 Mvc projesi
 
 ```
 Projeyi klonlamak için aşağıdaki komutu çalıştırabilirsiniz.
