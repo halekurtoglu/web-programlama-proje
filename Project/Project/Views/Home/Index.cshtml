@@ -6,21 +6,43 @@
 
             @foreach (var item in Model.Haberler)
             {
-                <div class="row">
-                    <div class="col-12 d-flex align-items-center border" style="padding:5px;">
-                        <div class="col-5">
-                            <img src="~/img/haber/@item.HaberResim" alt="..." class="img-thumbnail">
-                        </div>
-                        <div class="col-7">
-                            <a style="color:white;" href="/home/detail/@item.HaberID">@item.HaberBaslik</a>
-                        </div>
+            <div class="row">
+                @*<div class="col-12 d-flex align-items-center border" style="padding:5px;">
+                    <div class="col-5">
+                        <img src="~/img/haber/@item.HaberResim" alt="..." class="img-thumbnail">
+                    </div>
+                    <div class="col-7">
+                        <a style="color:black;" href="/home/detail/@item.HaberID">@item.HaberBaslik</a>
                     </div>
                 </div>
+                <br />*@
+                @*<div class="w3-card-4 ">
+                    <img class="card-img-top img-fluid" src="~/img/film/@item.HaberResim" >
+                    <div class="card-img-overlay card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text text-white">
+                            @item.HaberBaslik
+                        </p>
+                        <a href="/home/detail/@item.HaberID" class="btn btn-danger">Görüntüle</a>
+                    </div>
+                </div>*@
+
+                <div class="w3-card-4" style="width:50%;background-color:white">
+                    <img src="~/img/film/@item.HaberResim" alt="..." style="width:100%">
+                    <div class="w3-container">
+                        <br />
+                        <h4><b><a style="color:black;" href="/home/detail/@item.HaberID">@item.HaberBaslik</a></b></h4>
+                       
+                    </div>
+                </div>
+
+
+            </div>
                 <br />
 
             }
         </div>
-        <div class="col-4 border" style="background-color:#303030;">
+        <div class="col-4 border" style="background-color: #C4FB6D;">
             <br />
             <div class="text-center">
                 <h5 class="text-white">@localizer["Yeni Çıkan Filmler"]</h5>
@@ -29,7 +51,7 @@
             @foreach (var item in Model.Filmler1)
             {
                 <div class="row">
-                    <div class="col-12 d-flex align-items-center" style="border:solid;border-color:black;padding:5px;">
+                    <div class="col-12 d-flex align-items-center" style="border: solid; border-color: #7f39d1; padding: 5px;">
                         <div class="col-5">
                             <img src="~/img/film/@item.Resim" alt="..." class="img-thumbnail">
                         </div>
@@ -40,9 +62,11 @@
                     </div>
                 </div>
                 <br />
+
+                
             }
             <div class="text-center">
-                <h5 class="text-white">@localizer["Popüler Filmler"]</h5>
+                <h5 class="text-black">@localizer["Popüler Filmler"]</h5>
             </div>
             <br />
             @{ var i = 0; }
@@ -50,16 +74,16 @@
             {
                 { i += 1; }
                 <div class="row">
-                    <div class="col-12 d-flex align-items-center" style="border:solid;border-color:black;padding:5px;">
+                    <div class="col-12 d-flex align-items-center" style="border: solid; border-color: #FEBF5E; padding: 5px;">
                         <div class="col-1">
-                            <p><font face="trajan" color="white" size="3"><b>@i.</b></font></p>
+                            <p><font face="trajan" color="black" size="3"><b>@i.</b></font></p>
                         </div>
                         <div class="col-4">
                             <img src="~/img/film/@item.Resim" alt="..." class="img-thumbnail">
                         </div>
                         <div class="col-7">
-                            <p style="color:white;">@localizer["Film"]: <a style="color:white;" href="/populer/detail/@item.FilmID">@item.FilmAdi</a></p>
-                            <p style="color:white;">@localizer["Görüntülenme Sayısı"]: @item.GoruntulenmeSayisi</p>
+                            <p style="color:black;">@localizer["Film"]: <a style="color:white;" href="/populer/detail/@item.FilmID">@item.FilmAdi</a></p>
+                            <p style="color:black;">@localizer["Görüntülenme Sayısı"]: @item.GoruntulenmeSayisi</p>
                         </div>
                     </div>
                 </div>
