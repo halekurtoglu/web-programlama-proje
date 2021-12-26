@@ -10,9 +10,9 @@
                 <img src="~/img/film/@item.Film.Resim" alt="..." class="img-thumbnail">
             </div>
             <div class="col-7">
-                <p style="color:white;">@localizer["Film"]: <a style="color:white;" href="/filmler/detail/@item.FilmID">@item.Film.FilmAdi</a></p>
-                <p style="color:white;">@localizer["Geliştirici"]: @item.Film.Gelistirici</p>
-                <p style="color:white;">@localizer["Yayıncı"]: @item.Film.Yayinci</p>
+                <p style="color:black;">@localizer["Film"]: <a style="color:black;" href="/filmler/detail/@item.FilmID">@item.Film.FilmAdi</a></p>
+                <p style="color: black;">@localizer["Geliştirici"]: @item.Film.Gelistirici</p>
+                <p style="color: black;">@localizer["Yayıncı"]: @item.Film.Yayinci</p>
                 <a href="/Favori/FavoridenCikar/@item.Film.FilmID" class="btn btn-danger btn-circle text-uppercase"><span class="glyphicon glyphicon-send">@localizer["Favorilerden Kaldır"]</span></a>
             </div>
         </div>
