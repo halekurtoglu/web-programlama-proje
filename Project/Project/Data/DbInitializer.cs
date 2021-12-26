@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace Project.Data
 {
     public static class DbInitializer
-    {
-        //Veritabanı yüklenmeden önce ekrana gelecek veriler burada bulunmakta.
+    {//Veritabanı yüklenmeden önce ekrana gelecek veriler burada bulunmakta.
         public static void Seed(this ModelBuilder builder)
         {
             builder.Entity<Haber>().HasData(

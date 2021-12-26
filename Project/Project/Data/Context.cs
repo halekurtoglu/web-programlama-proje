@@ -28,7 +28,7 @@ namespace Project.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //Göndereceğimizi veritabanını tanımlıyoruz.
+            //Oluşturacağımız veritabanı ve ilgili server tanımlaması.
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=FilmProjesi; trusted_connection=true;");
         }
 
