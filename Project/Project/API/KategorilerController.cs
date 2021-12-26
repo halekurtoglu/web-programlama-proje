@@ -13,42 +13,42 @@ namespace Project.API
     {
         [Route("api/[controller]")]
         [ApiController]
-        public class FilmController : Controller
+        public class KategorilerController : Controller
         {
             private readonly Context _context;
-            public FilmController(Context context)
+            public KategorilerController(Context context)
             {
                 _context = context;
             }
             //api/film
             [HttpGet]
-            public async Task<ActionResult<IEnumerable<Film>>> GetFilm()
+            public async Task<ActionResult<IEnumerable<Kategori>>> GetKategori()
             {
-                return await _context.Film.ToListAsync();
+                return await _context.Kategori.ToListAsync();
             }
             //api/Film/1
             [HttpGet("{id}")]
-            public async Task<ActionResult<Film>> GetFilm(int id)
+            public async Task<ActionResult<Kategori>> GetKategori(int id)
             {
-                var Film = await _context.Film.FindAsync(id);
+                var Kategori = await _context.Kategori.FindAsync(id);
 
-                if (Film == null)
+                if (Kategori == null)
                 {
                     return NotFound();
                 }
 
-                return Film;
+                return Kategori;
             }
             //api/Film/1
             [HttpPut("{id}")]
-            public async Task<IActionResult> PutFilm(int id, Film Film)
+            public async Task<IActionResult> PutKategori(int id, Kategori Kategori)
             {
-                if (id != Film.FilmID)
+                if (id != Kategori.KategoriID)
                 {
                     return BadRequest();
                 }
 
-                _context.Entry(Film).State = EntityState.Modified;
+                _context.Entry(Kategori).State = EntityState.Modified;
 
                 try
                 {
@@ -56,7 +56,7 @@ namespace Project.API
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FilmExists(id))
+                    if (!KategoriExists(id))
                     {
                         return NotFound();
                     }
@@ -70,24 +70,24 @@ namespace Project.API
             }
             //api/Film
             [HttpPost]
-            public async Task<ActionResult<Film>> PostFilm(Film Film)
+            public async Task<ActionResult<Kategori>> PostKategori(Kategori Kategori)
             {
-                _context.Film.Add(Film);
+                _context.Kategori.Add(Kategori);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction("GetFilm", new { id = Film.FilmID }, Film);
+                return CreatedAtAction("GetKategori", new { id = Kategori.KategoriID }, Kategori);
             }
             //api/Film/1
             [HttpDelete("{id}")]
-            public async Task<IActionResult> DeleteFilm(int id)
+            public async Task<IActionResult> DeleteKategori(int id)
             {
-                var Film = await _context.Film.FindAsync(id);
-                if (Film == null)
+                var Kategori = await _context.Kategori.FindAsync(id);
+                if (Kategori == null)
                 {
                     return NotFound();
                 }
 
-                _context.Film.Remove(Film);
+                _context.Kategori.Remove(Kategori);
                 await _context.SaveChangesAsync();
 
                 return NoContent();
@@ -98,9 +98,9 @@ namespace Project.API
             {
                 return View();
             }
-            private bool FilmExists(int id)
+            private bool KategoriExists(int id)
             {
-                return _context.Film.Any(e => e.FilmID == id);
+                return _context.Kategori.Any(e => e.KategoriID == id);
             }
         }
     }
