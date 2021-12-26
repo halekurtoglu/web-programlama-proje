@@ -26,7 +26,7 @@ namespace Project.API
             {
                 return await _context.Film.ToListAsync();
             }
-            // GET: api/Film/1
+            //api/Film/1
             [HttpGet("{id}")]
             public async Task<ActionResult<Film>> GetFilm(int id)
             {
@@ -39,7 +39,7 @@ namespace Project.API
 
                 return Film;
             }
-            // PUT: api/Film/1
+            //api/Film/1
             [HttpPut("{id}")]
             public async Task<IActionResult> PutFilm(int id, Film Film)
             {
@@ -68,7 +68,7 @@ namespace Project.API
 
                 return NoContent();
             }
-            // POST: api/Film
+            //api/Film
             [HttpPost]
             public async Task<ActionResult<Film>> PostFilm(Film Film)
             {
@@ -77,7 +77,7 @@ namespace Project.API
 
                 return CreatedAtAction("GetFilm", new { id = Film.FilmID }, Film);
             }
-            // DELETE: api/Film/1
+            //api/Film/1
             [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteFilm(int id)
             {
